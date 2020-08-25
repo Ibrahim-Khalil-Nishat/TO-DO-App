@@ -1,0 +1,27 @@
+<table bgcolor="red" class='table table-striped'>
+    <form action='sea' method='POST'>
+        {% csrf_token %}
+        <td><input name=group></td>
+        <td><button type='submit'>Search</button></td>
+
+    </form>
+<tr>
+
+    <th>Name</th>
+    <th>Age</th>
+    <th>Group</th>
+    <th>Contact</th>
+    
+</tr>
+
+{% for i in group %}
+<tr>
+    <td>{{i.name}}</td>
+    <td>{{i.age}}</td>
+    <td>{{i.group}}</td>
+    <td>{{i.contact}}</td>
+    <td><a href='Dele/{{i.id}}'>Delete</a></td>
+      
+</tr>
+{%endfor%}
+</table>

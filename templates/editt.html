@@ -1,0 +1,10 @@
+<form action='editt'method='POST' >
+    {% csrf_token %}
+<input name='Name' required value={{register.Name}}>
+<input name='Roll' required value={{register.Roll}}>
+<button type='submit'>update</button>
+
+
+
+
+</form>

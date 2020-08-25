@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor='red'class='table table-striped'>
+    <form  action="Adddd" method="POST" >
+        {% csrf_token %}
+        
+        
+        <label>Name:</label>
+        <div>{{form.name}}</div>
+        <label>Age:</label>
+        <div>{{form.age}}</div>
+        <label>Group:</label>
+        <div>{{form.group}}</div>
+        <label>Contact:</label>
+        <div>{{form.contact}}</div>
+        <button type='submit'>Submit</button>
+        
+        
+        </form>
+    
+</body>
+</html>
